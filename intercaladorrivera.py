@@ -4,7 +4,16 @@ import re
 
 def intercalar_insultos_ligero(texto, insultos=None):
     if insultos is None:
-        insultos = ["imbécil", "idiota", "pelotudo", "inútil", "tarado", "bobo"]
+        insultos = ["pelotudo", "boludo", "salame", "inútil", "tarado", "imbécil", "mogólico",
+    "flaco", "bobo", "cabeza de termo", "mamerto", "cara de verga", "cara de culo",
+    "gil", "soquete", "fantasma", "papanatas", "payaso", "choto", "trucho", "atrasado",
+    "forro", "cornudo", "chupapija", "ganso", "chorro", "ladrón", "vendehumo",
+    "petiso", "ridículo", "pelo duro", "pancho", "pajero", "careta", "muerto", 
+    "concheto", "pichi", "lento", "cascote", "mamarracho", "cara rota", 
+    "ñoqui", "ñeri", "gato", "rata", "plaga", "boludón", "triste", 
+    "muerto de hambre", "mugriento", "parásito", "morsa", "cucaracha", "culeado",
+    "manija", "retrasado", "inservible", "venado", "culebrón", "perro", "desubicado",
+    "cara de nada", "sorete", "fiambre", "larva", "lechuga", "burro", "pato criollo"]
 
     oraciones_raw = re.split(r'(?<=[.!?])\s+', texto)
     resultado = []
